@@ -1,0 +1,180 @@
+.section-title {
+  margin: var(--space-4) 0 var(--space-3);
+  font-size: 1.2rem;
+}
+
+.bills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--space-3);
+}
+
+.bill-card {
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border-left: 6px solid var(--color-primary);
+  padding: var(--space-3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.bill-meta {
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+}
+
+.bill-subtotal {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.bill-warning {
+  background: #fdf8ec;
+  color: #8a6212;
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.total-collected {
+  color: var(--color-text-muted);
+}
+
+.total-collected strong {
+  color: var(--color-text);
+}
+
+.history-wrapper {
+  overflow-x: auto;
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.history-table th,
+.history-table td {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.9rem;
+}
+
+.history-table th {
+  color: var(--color-text-muted);
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  color: var(--color-primary);
+  font-size: 0.85rem;
+  text-decoration: underline;
+}
+
+/* Bill lines (payment form + receipt) */
+.bill-lines {
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-2);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.bill-line {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+}
+
+.bill-total {
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-top: 1px dashed var(--color-border);
+  padding-top: var(--space-2);
+  margin-top: var(--space-1);
+}
+
+.change-line {
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+/* Receipt */
+.receipt {
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.receipt h2 {
+  text-align: center;
+}
+
+.receipt-sub {
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+}
+
+.receipt-items {
+  list-style: none;
+  border-top: 1px dashed var(--color-border);
+  border-bottom: 1px dashed var(--color-border);
+  padding: var(--space-2) 0;
+  margin: var(--space-2) 0;
+}
+
+.receipt-items li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  padding: 0.2rem 0;
+}
+
+/* Printing: show only the receipt */
+@media print {
+  .sidebar,
+  .page-header,
+  .section-title,
+  .bills-grid,
+  .history-header,
+  .history-wrapper,
+  .empty,
+  .no-print {
+    display: none !important;
+  }
+
+  .content {
+    padding: 0;
+  }
+
+  .modal-overlay {
+    position: static;
+    background: none;
+    padding: 0;
+  }
+
+  .modal {
+    box-shadow: none;
+    max-width: 100%;
+    max-height: none;
+  }
+}

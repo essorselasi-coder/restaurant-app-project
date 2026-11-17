@@ -1,0 +1,27 @@
+:root {
+  /* Colors: warm café feel */
+  --color-bg: #faf6f0;
+  --color-surface: #ffffff;
+  --color-text: #2b2118;
+  --color-text-muted: #7a6c5d;
+  --color-primary: #d9531e;
+  --color-primary-dark: #b5410f;
+  --color-accent: #2f6f5e;
+  --color-border: #e8dfd3;
+  --color-danger: #c0392b;
+
+  /* Typography */
+  --font-main: 'Inter', system-ui, sans-serif;
+  --font-heading: 'Poppins', system-ui, sans-serif;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2.5rem;
+
+  /* Shape */
+  --radius: 10px;
+  --shadow: 0 2px 8px rgba(43, 33, 24, 0.08);
+}
