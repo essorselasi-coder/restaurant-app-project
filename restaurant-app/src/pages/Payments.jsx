@@ -155,7 +155,7 @@ function Payments() {
                 <tr key={payment.id}>
                   <td>#{payment.number}</td>
                   <td>{payment.tableNumber}</td>
-                  <td>{formatDateTime(payment.paidAt)}</td>
+                  <td>{formatDateTime(payment.paidAt || payment.createdAt)}</td>  
                   <td>{getMethodLabel(payment.method)}</td>
                   <td>{formatPrice(payment.total)}</td>
                   <td>

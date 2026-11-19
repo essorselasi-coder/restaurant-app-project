@@ -1,0 +1,175 @@
+.dash-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.dash-top h1 {
+  margin: 0;
+}
+
+.dash-sub {
+  margin: 4px 0 0;
+  opacity: 0.65;
+}
+
+.dash-hero {
+  background: linear-gradient(135deg, #d9541e, #f08a3c);
+  color: #fff;
+  border-radius: 16px;
+  padding: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 24px;
+  box-shadow: 0 8px 20px rgba(217, 84, 30, 0.3);
+}
+
+.dash-hero p {
+  margin: 0;
+}
+
+.dash-hero-label {
+  opacity: 0.9;
+  font-size: 15px;
+}
+
+.dash-hero-value {
+  font-size: 44px;
+  font-weight: 800;
+  margin-top: 6px !important;
+}
+
+.dash-hero-side {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.dash-pill {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 12px 18px;
+  min-width: 120px;
+}
+
+.dash-pill strong {
+  display: block;
+  font-size: 22px;
+}
+
+.dash-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.dash-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.dash-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+.dash-stat {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-left: 5px solid #d9541e;
+}
+
+.dash-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.dash-label {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.65;
+}
+
+.dash-value {
+  margin: 4px 0 0;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.dash-panels {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 16px;
+}
+
+.dash-panels h2 {
+  margin: 0 0 16px;
+  font-size: 20px;
+}
+
+.dash-bar-track {
+  background: #f1e8df;
+  border-radius: 999px;
+  height: 14px;
+  overflow: hidden;
+}
+
+.dash-bar-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #d9541e, #f08a3c);
+}
+
+.dash-bar-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 14px;
+  opacity: 0.75;
+}
+
+.dash-dish {
+  margin-bottom: 14px;
+}
+
+.dash-dish-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.dash-rank {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #2b1d14;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.dash-empty {
+  opacity: 0.6;
+}
